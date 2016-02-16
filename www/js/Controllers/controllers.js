@@ -1,4 +1,4 @@
-angular.module('starter.controllers', [])
+angular.module('BloodDonor.Controllers', [])
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
 
@@ -43,12 +43,12 @@ angular.module('starter.controllers', [])
 
 .controller('PlaylistsCtrl', function($scope) {
   $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
+    { title: 'John', id: 1 },
+    { title: 'Ram', id: 2 },
+    { title: 'Stephan', id: 3 },
+    { title: 'Indira', id: 4 },
+    { title: 'Radika', id: 5 },
+    { title: 'Vidya', id: 6 }
   ];
 })
 

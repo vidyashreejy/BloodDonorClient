@@ -1,0 +1,7 @@
+<ion-view view-title="Welcome">
+  <ion-content>
+      <ion-list>
+          <ion-item ng-repeat="menuItem in menuItems" href="{{menuItem.path}}"> {{menuItem.title}}</ion-item>
+      </ion-list>
+  </ion-content>
+</ion-view>
