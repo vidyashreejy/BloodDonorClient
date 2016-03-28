@@ -1,8 +1,8 @@
 angular.module('BloodDonor.Controllers')
 
-.controller('WelcomeCtrl', function($scope) {
+.controller('HomeCtrl', function($scope) {
  $scope.menuItems = [
-    { title: 'Request for Blood', path: '#/app/requestBlood' },
+    { title: 'Request for Blood', path: '#/app/RequestBlood' },
     { title: 'Become a donor', path: '#/app/becomeDonor' }
   ];
 });

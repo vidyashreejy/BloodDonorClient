@@ -1,0 +1,25 @@
+<ion-view view-title="Request Blood">
+    <ion-content>
+        <form ng-submit="searchDonor()">
+            <div class="list">
+                <label class="item item-input item-select">
+                    <span class="input-label">Select BloodGroup:</span>
+                    <select ng-model='searchDonorData.bloodType'>
+                        <option ng-repeat="type in BloodGroups" > {{type.name}}</option>
+                    </select>
+                </label>
+
+                <label class="item item-input item-select">
+                    <span class="input-label">Select City:</span>
+                    <select ng-model='searchDonorData.city'>
+                        <option ng-repeat="city in Cities" > {{city.CityName}}</option>
+                    </select>
+                </label>
+
+                <label class="item">
+                  <button class="button button-block button-positive" type="submit">Search for Donors</button>
+                </label>
+            </div>
+        </form>
+    </ion-content>
+</ion-view>

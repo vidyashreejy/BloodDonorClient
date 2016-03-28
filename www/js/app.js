@@ -37,37 +37,31 @@ angular.module('BloodDonor', ['ionic', 'BloodDonor.Controllers'])
     views: {
       'menuContent': {
         templateUrl: 'templates/home.html',
-        controller: 'WelcomeCtrl'
-      }
-    }
-  })
-  .state('app.request', {
-    url: '/requestBlood',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/requestBlood.html',
-        controller: 'RequestBloodCtrl'
+        controller: 'HomeCtrl'
       }
     }
   })
   
-  .state('app.search', {
-    url: '/search',
+  .state('app.RequestBlood', {
+    url: '/RequestBlood',
     views: {
       'menuContent': {
-        templateUrl: 'templates/search.html'
+        templateUrl: 'templates/searchDonors.html',
+        controller: 'SearchDonorsCtrl'
       }
     }
   })
-
-  .state('app.browse', {
-      url: '/browse',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/browse.html'
-        }
+  
+  .state('app.DisplayDonors', {
+    url: '/DisplayDonors',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/displayDonors.html',
+        controller: 'DisplayDonorsCtrl'
       }
-    })
+    }
+  })
+  
     .state('app.playlists', {
       url: '/playlists',
       views: {
