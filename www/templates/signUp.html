@@ -1,0 +1,43 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Sign Up</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeSignUp()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form ng-submit="SendData()">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Name</span>
+          <input type="text" ng-model="SendData.Name">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">DOB</span>
+          <input type="text" ng-model="SendData.DOB">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Sex</span>
+          <input type="text" ng-model="SendData.Sex">
+        </label>
+        <label class="item item-input item-select">
+                    <span class="input-label">Select BloodGroup:</span>
+                    <select ng-model='searchDonorData.bloodType'>
+                        <option ng-repeat="type in BloodGroups" > {{type.name}}</option>
+                    </select>
+                </label>
+        <label class="item item-input">
+          <span class="input-label">Location</span>
+          <input type="text" ng-model="SendData.Location">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">ContactNo</span>
+          <input type="text" ng-model="SendData.ContactNo">
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">Sign Up</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>

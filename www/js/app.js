@@ -62,6 +62,35 @@ angular.module('BloodDonor', ['ionic', 'BloodDonor.Controllers'])
     }
   })
   
+   .state('app.becomeDonor', {
+    url: '/becomeDonor',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/signUp.html',
+        controller: 'signUpCtrl'
+      }
+    }
+  })
+  
+  .state('app.amenu', {
+    url: '/amenu',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/amenu.html'
+      }
+    }
+  })
+  .state('app.viewDonors', {
+    url: '/viewDonors',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/viewDonors.html',
+        controller: 'ViewDonorsCtrl'
+      }
+    }
+  })
+  
+  
     .state('app.playlists', {
       url: '/playlists',
       views: {

@@ -1,5 +1,5 @@
 (function() {
-    var searchDonorsCtrl = function($scope, $http, $location, DonorsService) {
+    var searchDonorsCtrl = function($scope, $http, $location, DonorsService,bloodGroupService) {
     
         // To handle CORS
         $http.defaults.headers.put = {
@@ -39,6 +39,7 @@
             .success(function(bloodGroups) {
                 console.log('Successfuly retrived Blood Groups');
                 $scope.BloodGroups = bloodGroups;
+                bloodGroupService.saveBloodGroup(BloodGroups)
             })
             .error(function(status) {
                 console.log('Failure,unable to retrived data,status = ' + status);
